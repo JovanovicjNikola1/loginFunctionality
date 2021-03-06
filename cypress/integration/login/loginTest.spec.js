@@ -6,7 +6,7 @@ describe('Login Form Functionality', () => {
         cy.visit('/sign-in');
     });
     positiveTestParameters.forEach((params) => {
-        it.skip(params.testName, () => {
+        it(params.testName, () => {
             // Fill the username
             cy.get('#username')
                 .type(params.email)
